@@ -187,7 +187,66 @@ body{
 /* FOOTER */
 .footer{margin-top:20px;padding:16px;color:#9aa4b2}
 .footer-inner{max-width:var(--max-width); margin:0 auto; display:flex; justify-content:space-between; gap:10px; align-items:center}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-bottom: 1px solid #222;
+  padding-bottom: 30px;
+}
 
+.footer-about {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+.footer-about h3 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-about p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #aaa;
+}
+
+.footer-links {
+  display: flex;
+  flex: 2 1 600px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-col h4 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #aaa;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #fff;
+}
 /* Responsive */
 @media (max-width: 900px){
   .main-grid{grid-template-columns: 1fr}
