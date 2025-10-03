@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Customer Support — Ticket System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-left">
+      <div class="logo">
+        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><rect width='32' height='32' rx='6' fill='%233c7cff'/></svg>" alt="logo" />
+        <span class="site-name">HelpDesk</span>
+      </div>
+    </div>
+
+    <nav class="nav-right">
+      <ul class="menu">
+        <li><a href="#" class="active">Dashboard</a></li>
+        <li><a href="#">Tickets</a></li>
+        <li><a href="#">Customers</a></li>
+        <li><a href="#">Reports</a></li>
+      </ul>
+      <button id="newTicketBtn" class="btn primary">New Ticket</button>
+    </nav>
+  </header>
+
+  <!-- BANNER -->
+<section class="banner-stats">
+  <div class="stat purple">
+    <div class="stat-label">In-Progress</div>
+    <div id="inProgressCount" class="stat-value">0</div>
+  </div>
+  <div class="stat green">
+    <div class="stat-label">Resolved</div>
+    <div id="resolvedCount" class="stat-value">0</div>
+  </div>
+</section>
+
+
+  <!-- MAIN -->
+  <main class="container">
+    <section class="main-grid">
+      <!-- Left: Tickets grid -->
+      <div class="tickets-panel">
+        <h2 class="panel-title">Tickets</h2>
+        <div id="ticketsGrid" class="tickets-grid"></div>
+      </div>
+
+      <!-- Right: Task Status -->
+      <aside class="task-panel">
+        <h2 class="panel-title">Task Status</h2>
+        <div id="taskList" class="task-list">
+          <p class="empty">Click a ticket card to add it here.</p>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>© <span id="year"></span> HelpDesk</div>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
